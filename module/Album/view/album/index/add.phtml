@@ -1,0 +1,26 @@
+<div class="jumbotron">
+    <h1 align=center>Add <span class="zf-green">Album</span></h1>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form method="POST"n action="<?= $this->url('album', ['action' => 'add']) ?>">
+                <div class="form-group">
+                    <label for="artist">
+                        Artist
+                    </label>
+                    <input type="text" name="artist" id="artist" placeholder="Enter Artist Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="title">
+                        Title
+                    </label>
+                    <input type="text" name="title" id="title" placeholder="Enter Title" class="form-control">
+                </div>
+                <div class="form-group" align="right">
+                    <input type="submit" name="add" id="add" class="btn btn-info" value="add"/>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
